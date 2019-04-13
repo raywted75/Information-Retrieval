@@ -30,43 +30,33 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 
 ### Variables:
-![image](<a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;\\Q:&space;query&space;\\D:&space;document&space;\\N:corpus\&space;length&space;\\df:&space;number\&space;of\&space;documents\&space;contain\&space;the\&space;term&space;\\tf:&space;term's\&space;frequency\&space;in\&space;document&space;\\dl:&space;document\&space;length&space;\\avdl:&space;average\&space;document\&space;length&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;\\Q:&space;query&space;\\D:&space;document&space;\\N:corpus\&space;length&space;\\df:&space;number\&space;of\&space;documents\&space;contain\&space;the\&space;term&space;\\tf:&space;term's\&space;frequency\&space;in\&space;document&space;\\dl:&space;document\&space;length&space;\\avdl:&space;average\&space;document\&space;length&space;$$" title="$$ \\Q: query \\D: document \\N:corpus\ length \\df: number\ of\ documents\ contain\ the\ term \\tf: term's\ frequency\ in\ document \\dl: document\ length \\avdl: average\ document\ length $$" /></a>)
-$$Q: query$$
-$$D: document$$
-$$N:corpus\ length$$
-$$df: number\ of\ documents\ contain\ the\ term$$
-$$tf: term's\ frequency\ in\ document$$ 
-$$dl: document\ length$$
-$$avdl: average\ document\ length$$
+
+- Q: query
+- D: document
+- N:corpus\ length
+- df: number\ of\ documents\ contain\ the\ term
+- tf: term's\ frequency\ in\ document
+- dl: document\ length
+- avdl: average\ document\ length
 
 
 ## 2. Rocchio Relevance Feedback
 
 ### Formula:
 
-$$\vec{Q_m} = \vec{Q_o} + \biggl(br \cdot {\tfrac{1}{|D_r|}} \cdot \sum\limits_{\vec{D_j} \in D_r} \vec{D_j}\biggr)$$
+![image](http://latex2png.com/output//latex_a4084acadf92ae4469ade01e79626134.png)
 
 ### Variables:
-$$\vec{Q_o}: original\ query\ vector$$
-$$\vec{Q_m}: modified\ query\ vector$$
-$$D_r: related\ documents$$
-$$\vec{D_j}: related\ document\ vector$$
+
+- \vec{Q_o}: original\ query\ vector
+- \vec{Q_m}: modified\ query\ vector
+- D_r: related\ documents
+- \vec{D_j}: related\ document\ vector
 
 
 ## 3. Experiments
 
-### 0. Default setting:
-```
-use_stopwords = True
-k1 = 1.6
-b = 0.9
-threshold = 0.25
-feedback_times = 3
-b_r = 0.5
-max_related = 10
-```
-
-### 1. Rocchio Relevance Feedback
+### Rocchio Relevance Feedback
 
 | Feedback Times       | Kaggle Public | Kaggle Private |
 | -------------------- | ------------- | -------------- |
@@ -77,7 +67,7 @@ max_related = 10
 | 4                    | 0.81125       | 0.67217        |
 | 5                    | 0.80939       | 0.70694        |
 
-### 2. $$k_1$$
+### k1
 
 | $$k_1$$ | Kaggle Public | Kaggle Private |
 | ------- | ------------- | -------------- |
@@ -88,7 +78,7 @@ max_related = 10
 | 1.8     | 0.81407       | 0.67620        |
 | 2       | 0.81614       | 0.67556        |
 
-### 3. $$b$$
+### b
 
 | $$b$$ | Kaggle Public | Kaggle Private |
 | ----- | ------------- | -------------- |
@@ -100,7 +90,7 @@ max_related = 10
 | 0.95  | 0.81347       | 0.73799        |
 | 1.00  | 0.81365       | 0.68414        |
 
-### 4. $$Stopwords$$
+### Stopwords
 
 |                   | Kaggle Public | Kaggle Private |
 | ----------------- | ------------- | -------------- |
