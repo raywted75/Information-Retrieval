@@ -1,7 +1,5 @@
 # Vector Space Model with Rocchio Relevance Feedback
 
-## 0. 
-
 ## 0. Information
 
 ### Introduction
@@ -16,20 +14,14 @@
 - Slide: [Google Drive](https://drive.google.com/file/d/1CuxmcLR6SRloSARAKrVPgTHiCDktdjWu/view?usp=sharing)
 
 ### Environment
-Language: Python 3.5.2
+Language: [![Python 3.5.2][python-image][python-url]]
 System: Ubuntu 16.04.6 LTS
 
 ### Execution
-Usage:
 ```
 python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 ```
 
-Example:
-```
-python3 vsm.py -r -i data/queries/query-test.xml -o result.csv -m data/mode
-l -d data/CIRB010
-```
 
 ## 1. Vector Space Model
 
