@@ -33,11 +33,11 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 - Q: query
 - D: document
-- N:corpus\ length
-- df: number\ of\ documents\ contain\ the\ term
-- tf: term's\ frequency\ in\ document
-- dl: document\ length
-- avdl: average\ document\ length
+- N:corpus length
+- df: number of documents contain the term
+- tf: term's frequency in document
+- dl: document length
+- avdl: average document length
 
 
 ## 2. Rocchio Relevance Feedback
@@ -48,10 +48,10 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 ### Variables:
 
-- \vec{Q_o}: original\ query\ vector
-- \vec{Q_m}: modified\ query\ vector
-- D_r: related\ documents
-- \vec{D_j}: related\ document\ vector
+- Q_o: original query vector
+- Q_m: modified query vector
+- D_r: related documents
+- D_j: related document vector
 
 
 ## 3. Experiments
@@ -69,7 +69,7 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 ### k1
 
-| $$k_1$$ | Kaggle Public | Kaggle Private |
+| k1 | Kaggle Public | Kaggle Private |
 | ------- | ------------- | -------------- |
 | 1       | 0.78149       | 0.65126        |
 | 1.2     | 0.77644       | 0.72572        |
@@ -80,7 +80,7 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 ### b
 
-| $$b$$ | Kaggle Public | Kaggle Private |
+| b | Kaggle Public | Kaggle Private |
 | ----- | ------------- | -------------- |
 | 0.70  | 0.81232       | 0.65700        |
 | 0.75  | 0.81172       | 0.67715        |
