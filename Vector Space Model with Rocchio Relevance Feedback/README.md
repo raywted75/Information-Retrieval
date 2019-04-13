@@ -30,6 +30,7 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 
 
 ### Variables:
+![image](<a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;\\Q:&space;query&space;\\D:&space;document&space;\\N:corpus\&space;length&space;\\df:&space;number\&space;of\&space;documents\&space;contain\&space;the\&space;term&space;\\tf:&space;term's\&space;frequency\&space;in\&space;document&space;\\dl:&space;document\&space;length&space;\\avdl:&space;average\&space;document\&space;length&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;\\Q:&space;query&space;\\D:&space;document&space;\\N:corpus\&space;length&space;\\df:&space;number\&space;of\&space;documents\&space;contain\&space;the\&space;term&space;\\tf:&space;term's\&space;frequency\&space;in\&space;document&space;\\dl:&space;document\&space;length&space;\\avdl:&space;average\&space;document\&space;length&space;$$" title="$$ \\Q: query \\D: document \\N:corpus\ length \\df: number\ of\ documents\ contain\ the\ term \\tf: term's\ frequency\ in\ document \\dl: document\ length \\avdl: average\ document\ length $$" /></a>)
 $$Q: query$$
 $$D: document$$
 $$N:corpus\ length$$
