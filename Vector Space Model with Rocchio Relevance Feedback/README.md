@@ -26,8 +26,8 @@ python3 vsm.py [-r] -i INPUT_FILE -o OUTPUT_FILE -m MODEL_DIR -d NTCIR_DIR
 ## 1. Vector Space Model
 
 ### Formula:
-![image](http://latex2png.com/output//latex_5abb653f8145f9e97c4e304e6fb573cd.png)
-$$\sum\limits_{t \in Q,D} \ln \frac{N-df+0.5}{df+0.5} \cdot \frac{(k_1+1)tf}{(k_1(1-b+b\frac{dl}{avdl}))+tf}$$
+![image](http://latex2png.com/output//latex_d017797171e121271bcb1ec1cb35a0a8.png)
+
 
 ### Variables:
 $$Q: query$$
